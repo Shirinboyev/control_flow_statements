@@ -10,5 +10,22 @@
         a: integer
     Returns:
         string: the message to print */
-
-void main() {}
+String func(int a) {
+  String s = '';
+  if (a > 9 &&  a % 2 == 0) {
+    s = 'two -digit even number';
+  }
+  if (a > 9 &&  a % 2 == 1) {
+    s = 'two -digit odd number';
+  }
+  if (a > 99 && a % 2 == 0) {
+    s = 'three -digit even number';
+  }
+  if (a > 99 && a % 2 == 1) {
+    s = 'three -digit odd number';
+  }
+  return s;
+}
+void main() {
+  print(func(22));
+}

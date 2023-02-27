@@ -7,16 +7,49 @@
     Returns:
         a: a increased by 1 if positive, else unchanged.
  */
-int func(int a){
-  // return a++*--b+ ++a + b++ - --b;
-  if(a > 0){
-  return a+=1;
+  int func(int a){
+    if(a>0){
+      return a+=1;
+    }
+    if(a<0){
+      return a=a;
+    }
+    return a;
   }
-  if(a<0){
-    return a = a;
-  }
-  return a;
-}
-void main() {
-  print(func(2));
-}
+  
+
+ void main(){
+  print(func(-5));
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// int func(int a){
+//   // return a++*--b+ ++a + b++ - --b;
+//   if(a > 0){
+//    a++;
+//   }
+//   if(a<0){
+//     return a ;
+//   }
+//   return a;
+// }
+// void main() {
+//   print(func(12));
+// }

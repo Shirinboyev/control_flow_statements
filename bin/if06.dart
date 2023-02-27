@@ -11,4 +11,36 @@
         c: third number
     Returns:
         string: string with the result*/
-void main() {}
+String func(int a,b,c){
+  String lot = '';
+int add1 = 0;
+int add2 = 0;
+if(a>0){
+  add1 +=1;
+}
+if(b>0){
+  add1 +=1;
+}
+if(c>0){
+  add1 +=1;
+}
+if(a<0){
+  add2 +=1;
+}
+if(b<0){
+  add2 +=1;
+}
+if(c<0){
+  add2 +=1;
+}
+if(add1 < add2){
+  lot += "there are a lot of negative numbers";
+}
+if(add1 > add2){
+  lot += "there are a lot of positive numbers";
+}
+return lot;
+}
+void main() {
+  print(func(3, -5, -6));
+}

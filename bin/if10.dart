@@ -9,8 +9,34 @@
     Temp 31-40: "Hot"
     Temp >40: "Very Hot"
     Args:
-        temp: integer
+    temp: integer
     Returns:
-        string: the message to return*/
+    string: the message to return
+*/
 
-void main() {}
+
+String func(int a){
+  String s = '';
+  if(a ==0){
+    s += 'Freezing';
+  }
+  if(a > 0 && a <= 10){
+    s += 'Very cold';
+  }
+  if(a>10 && a <= 20){
+    s += 'Cold';
+  }
+  if(a>20 && a <= 30){
+    s += 'Normal';
+  }
+  if(a >30 && a <40){
+    s+= 'Hot';
+  }
+  if(a ==40){
+    s+= 'Very Hot';
+  }
+  return s;
+}
+void main() {
+  print(func(10));
+}
